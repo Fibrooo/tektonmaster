@@ -117,8 +117,8 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
                         </ul>
 
                         <ul class="uk-switcher uk-margin">
-                            <!-- <li> -->
-                                <!-- <div class="kompliktaciya_mobile">
+                             <li>
+                                <div class="kompliktaciya_mobile">
 
                                     <div class="project_information_name">
                                         <h1 class="name_house"><?php echo $information['проект'] ?> <br> <?php echo get_the_title(); ?></h1>
@@ -168,9 +168,9 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
 
 
                                     </ul>
-                                </div> -->
+                                </div>
                                 <!-- НАЧАЛО КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
-                                <!-- <div class="kompliktaciya_desctop">
+                                <div class="kompliktaciya_desctop">
 
                                     <div class="project_information_name">
                                         <h1 class="name_house"><span><?php echo $information['проект'] ?></span> <br> <?php echo get_the_title(); ?></h1>
@@ -278,9 +278,9 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
 
                                     <?php endforeach; ?>
                                     <div id="secial"> </div>
-                                </div> -->
+                                </div>
                                 <!-- КОНЕЦ КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
-                            <!-- </li> -->
+                            </li>
                             <li>
                                 <?php
                                 if($kalkulator) {
