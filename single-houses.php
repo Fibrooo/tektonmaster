@@ -131,7 +131,7 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
                                                 <a href="" class="uk-accordion-title">
                                                     <?php echo  str_replace('_', ' ', $item); ?>
                                                     <?php if ($komplekt[$item]) : ?>
-                                                        <span> <?php echo $komplekt[$item] ?> млн. руб</span>
+                                                        <span> <?php echo $komplekt[$item] ?>  млн. руб</span>
                                                     <?php else : ?>
                                                         <span>Уточняйте у менеджера</span>
                                                     <?php endif; ?>
