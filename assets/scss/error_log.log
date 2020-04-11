@@ -1,0 +1,18 @@
+01/16/20 10:17:28: /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+01/16/20 10:18:28: /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+01/16/20 10:19:28: /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+01/16/20 10:23:31: main.scss - Undefined mixin _vars: line: 1
+01/16/20 10:25:34: main.scss - Undefined variable $accent-color: line: 5
+01/16/20 10:27:35: main.scss - Undefined variable $accent-color: line: 5
+01/16/20 9:54:28: main.scss - parse error: failed at `{` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 158
+01/17/20 12:43:46: main.scss - parse error: failed at `position: absolute` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 200
+01/17/20 2:11:46: main.scss - parse error: failed at `.services` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 275
+01/17/20 2:15:48: main.scss - parse error: failed at `content: ''` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 288
+01/18/20 10:58:28: main.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 479
+01/19/20 12:04:15: main.scss - parse error: failed at `position: absolute` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 514
+01/19/20 10:53:55: main.scss - parse error: failed at `.house_info_price` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 839
+01/24/20 5:56:03: main.scss - parse error: failed at `display: flex` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 943
+01/24/20 5:58:04: main.scss - Undefined variable $accent-color1: line: 978
+01/24/20 6:46:13: main.scss - unexpected }: failed at `` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1066
+01/24/20 7:20:08: main.scss - parse error: failed at `margin-top: 30px` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1093
+01/28/20 1:49:00: main.scss - parse error: failed at `&: after {` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1454
