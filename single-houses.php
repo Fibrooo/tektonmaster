@@ -113,7 +113,7 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
 
                         <ul class="tabs" uk-switcher="animation: uk-animation-fade">
                             <li><a href="#">Комплектации</a></li>
-                            <li><a href="#">Калькулятор комплектаций</a></li>
+                            <li><a href="#">Калькулятор комплектаций2</a></li>
                         </ul>
 
                         <ul class="uk-switcher uk-margin">
