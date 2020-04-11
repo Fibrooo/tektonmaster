@@ -113,7 +113,7 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
 
                         <ul class="tabs" uk-switcher="animation: uk-animation-fade">
                             <li><a href="#">Комплектации</a></li>
-                            <li><a href="#">Калькулятор комплектаций2</a></li>
+                            <li><a href="#">Калькулятор комплектаций</a></li>
                         </ul>
 
                         <ul class="uk-switcher uk-margin">
@@ -295,21 +295,22 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
                     <?php elseif ($term_list[0] === 'Каменные'): ?>
 
 
-                        <!-- НАЧАЛО КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
-                        <div class="kompliktaciya_desctop">
-                            <div class="project_information_name">
-                                <h1 class="name_house"><?php echo $information['проект'] ?>  <br> <?php echo get_the_title(); ?></h1>
-                                <h2 class="name_house_dop">Каменный дом</h2>
-                            </div>
+                        <ul class="tabs" uk-switcher="animation: uk-animation-fade">
+                            <li><a href="#">Комплектации</a></li>
+                            <li><a href="#">Калькулятор комплектаций</a></li>
+                        </ul>
+
+                        <ul class="uk-switcher uk-margin">
+                            <li>
+                                <!-- НАЧАЛО КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
+                                <div class="kompliktaciya_desctop">
+                                    <div class="project_information_name">
+                                        <h1 class="name_house"><?php echo $information['проект'] ?>  <br> <?php echo get_the_title(); ?></h1>
+                                        <h2 class="name_house_dop">Каменный дом</h2>
+                                    </div>
 
 
-                            <div class="bundling_tabs_wrapper">
-                                <ul data-uk-switcher="{connect:'#kamen_komplekt'}" class="bundling_tabs">
-                                    <li><a href="#">Теплый контур</a></li>
-                                    <!-- <li><a href="#">Калькулятор</a></li> -->
-                                </ul>
-                                <ul id="kamen_komplekt" class="uk-switcher bundling_tabs_info_wrapper">
-                                    <li>
+                                    <div class="bundling_tabs_wrapper">
                                         <div class="bundling_tabs_info_wrapper_inner">
                                             <div class="bundling_top_line_info">
                                                 <h4 class="bundling_name">Что входит в комплектацию "Теплый контур"?</h4>
@@ -325,32 +326,20 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                    <!--  <li>
-                                       <h2>Калькулятор</h2>
-                                   </li> -->
-                               </ul>
-                           </div>
+                                    </div>
 
-                       </div>
-                       <!-- КОНЕЦ КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
+                                </div>
+                                <!-- КОНЕЦ КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
 
-
-                       <!-- НАЧАЛО КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
-                        <div class="kompliktaciya_mobile">
-                            <div class="project_information_name">
-                                <h1 class="name_house"><?php echo $information['проект'] ?>  <br> <?php echo get_the_title(); ?></h1>
-                                <h2 class="name_house_dop">Каменный дом</h2>
-                            </div>
+                                <!-- НАЧАЛО КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
+                                <div class="kompliktaciya_mobile">
+                                    <div class="project_information_name">
+                                        <h1 class="name_house"><?php echo $information['проект'] ?>  <br> <?php echo get_the_title(); ?></h1>
+                                        <h2 class="name_house_dop">Каменный дом</h2>
+                                    </div>
 
 
-                            <div class="bundling_tabs_wrapper">
-                                <ul data-uk-switcher="{connect:'#kamen_komplekt'}" class="bundling_tabs">
-                                    <li><a href="#">Комплектация теплый контур</a></li>
-                                    <!-- <li><a href="#">Калькулятор</a></li> -->
-                                </ul>
-                                <ul id="kamen_komplekt" class="uk-switcher bundling_tabs_info_wrapper">
-                                    <li>
+                                    <div class="bundling_tabs_wrapper">
                                         <div class="bundling_tabs_info_wrapper_inner">
                                             <div class="bundling_top_line_info">
                                                 <h3 class="bundling_price">Cтоимость комплектации <br><?php echo $komplekt['теплый_контур'] ?> млн. руб.</h3>
@@ -365,15 +354,23 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                    <!--  <li>
-                                       <h2>Калькулятор</h2>
-                                   </li> -->
-                                </ul>
-                            </div>
+                                    </div>
 
-                        </div>
-                        <!-- КОНЕЦ КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
+                                </div>
+                                <!-- КОНЕЦ КОМПЛЕКТАЦИИ ДЛЯ КОМПЬЮТЕРА -->
+                            </li>
+                            <li>
+                                <?php
+                                if($kalkulator) {
+                                    echo do_shortcode($kalkulator);
+                                }else {
+                                    echo "<h3>Калькулятор находится в разработке!</h3>";
+                                }
+                                ?>
+                            </li>
+                        </ul>
+
+
 
 
 
@@ -462,142 +459,164 @@ elseif ($term_list[0] == 'Каменные' || $term_list[0] == 'Бани') {
 
                     <?php elseif($term_list[0] === 'Брусовые'): ?>
 
-                        <div class="kompliktaciya_desctop">
-                            <div class="project_information_name">
-                                <h1 class="name_house"><?php echo $information['проект'] ?> <br> <?php echo get_the_title(); ?></h1>
-                                <h2 class="name_house_dop">Дом из клееного бруса</h2>
-                            </div>
+                        <ul class="tabs" uk-switcher="animation: uk-animation-fade">
+                            <li><a href="#">Комплектации</a></li>
+                            <li><a href="#">Калькулятор комплектаций</a></li>
+                        </ul>
 
-                            <div uk-sticky="offset: 0; top: 70; bottom: #secial; animation: uk-animation-slide-top;" class="project_information_content_wrapper">
-                                <div class="project_information_content_row">
-                                    <div class="project_information_content_col_name">
-                                        <div class="project_information_content">
-                                            <h3 class="project_information_content_heading">Наименование</h3>
-                                        </div>
+                        <ul class="uk-switcher uk-margin">
+                            <li>
+                                <div class="kompliktaciya_desctop">
+                                    <div class="project_information_name">
+                                        <h1 class="name_house"><span><?php echo $information['проект'] ?></span> <br> <?php echo get_the_title(); ?></h1>
+                                        <h2 class="name_house_dop">Дом из клееного бруса</h2>
                                     </div>
-                                    <div class="project_information_content_col_name">
-                                        <div class="project_information_content">
-                                            <h3>Эконом</h3>
-                                            <?php if ($komplekt['эконом']) : ?>
-                                                <span> <?php echo $komplekt['эконом'] ?> млн. руб</span>
-                                            <?php else : ?>
-                                                <span>Уточняйте у менеджера</span>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    <div class="project_information_content_col_name">
-                                        <div class="project_information_content">
-                                            <h3>Стандарт</h3>
-                                            <?php if ($komplekt['стандарт']) : ?>
-                                                <span> <?php echo $komplekt['стандарт'] ?> млн. руб</span>
-                                            <?php else : ?>
-                                                <span>Уточняйте у менеджера</span>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    <div class="project_information_content_col_name">
-                                        <div class="project_information_content">
-                                            <h3>Премиум</h3>
-                                            <?php if ($komplekt['премиум']) : ?>
-                                                <span> <?php echo $komplekt['премиум'] ?> млн. руб</span>
-                                            <?php else : ?>
-                                                <span>Уточняйте у менеджера</span>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <?php
-
-                            foreach ($data as $key => $value) :
-
-                                ?>
-
-                                <div class="project_information_content_name">
-                                    <h3 class="heading"><?php echo $value['название_категории'] ?></h3>
-                                </div>
-
-
-                                <div class="project_information_content_wrapper">
-                                    <?php for ($l = 0; $l < count($value['тело_категории']); $l++) : ?>
+                                    <div uk-sticky="offset: 0; top: 70; bottom: #secial; animation: uk-animation-slide-top;" class="project_information_content_wrapper">
                                         <div class="project_information_content_row">
-
-                                            <div class="project_information_content_col">
+                                            <div class="project_information_content_col_name">
                                                 <div class="project_information_content">
-                                                    <p><?php echo $value['тело_категории'][$l]['название'] ?></p>
+                                                    <h3 class="project_information_content_heading">Наименование</h3>
                                                 </div>
                                             </div>
-                                            <div class="project_information_content_col">
-                                                <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['базовая'] ?></span></div>
+                                            <div class="project_information_content_col_name">
+                                                <div class="project_information_content">
+                                                    <h3>Эконом</h3>
+                                                    <?php if ($komplekt['эконом']) : ?>
+                                                        <span> <?php echo $komplekt['эконом'] ?> млн. руб</span>
+                                                    <?php else : ?>
+                                                        <span>Уточняйте у менеджера</span>
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
-                                            <div class="project_information_content_col">
-                                                <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['стандарт'] ?></span></div>
+                                            <div class="project_information_content_col_name">
+                                                <div class="project_information_content">
+                                                    <h3>Стандарт</h3>
+                                                    <?php if ($komplekt['стандарт']) : ?>
+                                                        <span> <?php echo $komplekt['стандарт'] ?> млн. руб</span>
+                                                    <?php else : ?>
+                                                        <span>Уточняйте у менеджера</span>
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
-                                            <div class="project_information_content_col">
-                                                <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['премиум'] ?></span></div>
+                                            <div class="project_information_content_col_name">
+                                                <div class="project_information_content">
+                                                    <h3>Премиум</h3>
+                                                    <?php if ($komplekt['премиум']) : ?>
+                                                        <span> <?php echo $komplekt['премиум'] ?> млн. руб</span>
+                                                    <?php else : ?>
+                                                        <span>Уточняйте у менеджера</span>
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
                                         </div>
-                                    <?php endfor ?>
+                                    </div>
+
+                                    <?php
+
+                                    foreach ($data as $key => $value) :
+
+                                        ?>
+
+                                        <div class="project_information_content_name">
+                                            <h3 class="heading"><?php echo $value['название_категории'] ?></h3>
+                                        </div>
+
+
+                                        <div class="project_information_content_wrapper">
+                                            <?php for ($l = 0; $l < count($value['тело_категории']); $l++) : ?>
+                                                <div class="project_information_content_row">
+
+                                                    <div class="project_information_content_col">
+                                                        <div class="project_information_content">
+                                                            <p><?php echo $value['тело_категории'][$l]['название'] ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="project_information_content_col">
+                                                        <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['базовая'] ?></span></div>
+                                                    </div>
+                                                    <div class="project_information_content_col">
+                                                        <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['стандарт'] ?></span></div>
+                                                    </div>
+                                                    <div class="project_information_content_col">
+                                                        <div class="project_information_content"><span><?php echo $value['тело_категории'][$l]['премиум'] ?></span></div>
+                                                    </div>
+                                                </div>
+                                            <?php endfor ?>
+                                        </div>
+
+                                    <?php endforeach; ?>
+                                    <div id="secial"> </div>
                                 </div>
 
-                            <?php endforeach; ?>
-                            <div id="secial"> </div>
-                        </div>
+                                <div class="kompliktaciya_mobile">
 
-                        <div class="kompliktaciya_mobile">
+                                    <div class="project_information_name">
+                                        <h1 class="name_house"><?php echo $information['проект'] ?> <br> <?php echo get_the_title(); ?></h1>
+                                        <h2 class="name_house_dop">Каркасный дом</h2>
+                                    </div>
 
-                            <div class="project_information_name">
-                                <h1 class="name_house"><?php echo $information['проект'] ?> <br> <?php echo get_the_title(); ?></h1>
-                                <h2 class="name_house_dop">Каркасный дом</h2>
-                            </div>
-
-                            <ul uk-accordion="">
-                                <?php foreach ($komplekt_type as $item): ?>
-                                    <li class="">
-                                        <a href="" class="uk-accordion-title">
-                                            <?php echo  str_replace('_', ' ', $item); ?>
-                                            <span>
+                                    <ul uk-accordion="">
+                                        <?php foreach ($komplekt_type as $item): ?>
+                                            <li class="">
+                                                <a href="" class="uk-accordion-title">
+                                                    <?php echo  str_replace('_', ' ', $item); ?>
+                                                    <span>
                                         <?php if ($komplekt[$item]) : ?>
                                             <span> <?php echo $komplekt[$item] ?> млн. руб</span>
                                         <?php else : ?>
                                             <span>Уточняйте у менеджера</span>
                                         <?php endif; ?>
                                     </span>
-                                        </a>
-                                        <div class="uk-accordion-content">
-                                            <?php
-                                            $count = array();
-                                            foreach ($data as $value) {
-                                                echo '<h3 class="heading">'. $value['название_категории'].'</h3>';
-                                                $options = $value['тело_категории'];
+                                                </a>
+                                                <div class="uk-accordion-content">
+                                                    <?php
+                                                    $count = array();
+                                                    foreach ($data as $value) {
+                                                        echo '<h3 class="heading">'. $value['название_категории'].'</h3>';
+                                                        $options = $value['тело_категории'];
 
-                                                $name = array();
+                                                        $name = array();
 
-                                                for($i = 0; $i < count($options); $i++) {
+                                                        for($i = 0; $i < count($options); $i++) {
 
-                                                    if($options[$i][$item] == '+') {
-                                                        $name[] = $options[$i]['название'];
+                                                            if($options[$i][$item] == '+') {
+                                                                $name[] = $options[$i]['название'];
+                                                            }
+
+                                                        }
+
+                                                        if(!empty($name)) {
+                                                            foreach ($name as $k => $v) {
+                                                                echo "<p>- ". $v. "</p>";
+                                                            }
+                                                        }else {
+                                                            echo "<p> Не предусмотренно в комплектации</p>";
+                                                        }
                                                     }
-
-                                                }
-
-                                                if(!empty($name)) {
-                                                    foreach ($name as $k => $v) {
-                                                        echo "<p>- ". $v. "</p>";
-                                                    }
-                                                }else {
-                                                    echo "<p> Не предусмотренно в комплектации</p>";
-                                                }
-                                            }
-                                            ?>
-                                        </div>
-                                    </li>
-                                <?php endforeach; ?>
+                                                    ?>
+                                                </div>
+                                            </li>
+                                        <?php endforeach; ?>
 
 
-                            </ul>
-                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <?php
+                                if($kalkulator) {
+                                    echo do_shortcode($kalkulator);
+                                }else {
+                                    echo "<h3>Калькулятор находится в разработке!</h3>";
+                                }
+                                ?>
+                            </li>
+
+                        </ul>
+
+
 
                         <?php else: ?>
                             <p>Выберете комплектацию!</p>

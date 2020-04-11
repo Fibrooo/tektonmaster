@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb606b98-86ed-41b7-91f8-b0723b1f58f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single-houses.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-houses.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,40 +30,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>project_slider_wrapper</find>
-      <find>principles_carousel</find>
-      <find>principles_carousel_item</find>
-      <find>popular__projects-item-content</find>
-      <find>popular__projects-item</find>
-      <find>popular__projects-item-info</find>
-      <find>headin</find>
-      <find>second_heading</find>
-      <find>principles_button_wrapper</find>
-      <find>carousel_reviews_item</find>
-      <find>projects__menu-item-bot</find>
-      <find>our_works_button_wrapper</find>
-      <find>footer_right_wrapper</find>
-      <find>revi</find>
-      <find>grad</find>
-      <find>prin</find>
-      <find>pri</find>
-      <find>princ</find>
-      <find>logo</find>
-      <find>.top__line</find>
-      <find>post</find>
-      <find>menu</find>
-      <find>.button__normal-accent</find>
-      <find>about</find>
-      <find>button__normal-accent</find>
-      <find>Наши работы</find>
-      <find>modal</find>
-      <find>d-sm-none</find>
-      <find>hidden-sm</find>
-      <find>nav</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,11 +75,37 @@
       <workItem from="1581169127719" duration="2680000" />
       <workItem from="1581492576270" duration="289000" />
       <workItem from="1581494926131" duration="6672000" />
-      <workItem from="1586637642729" duration="150000" />
+      <workItem from="1586637642729" duration="2796000" />
     </task>
+    <task id="LOCAL-00001" summary="To Comp">
+      <created>1586637960926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586637960926</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="To Comp" />
+    <option name="LAST_COMMIT_MESSAGE" value="To Comp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="439" y="195" key="#Deployment" timestamp="1586640283371">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="439" y="195" key="#Deployment/0.23.1680.1027@0.23.1680.1027" timestamp="1586640283371" />
+    <state x="357" y="49" key="CommitChangelistDialog2" timestamp="1586637960774">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="357" y="49" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1586637960774" />
+    <state x="439" y="269" key="Vcs.Push.Dialog.v2" timestamp="1586637964447">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="439" y="269" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1586637964447" />
   </component>
 </project>
