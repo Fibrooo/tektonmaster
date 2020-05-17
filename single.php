@@ -13,13 +13,13 @@ get_header();
 	<div class="single_post" ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-9">
                     <div class="article_wrapper">
                         <article>
                             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                 <!-- Цикл WordPress -->
                                 <h2 class="second_heading"><?php the_title() ?></h2>
-                                <?php the_post_thumbnail(); ?>
+
                                 <div class="article_content">
                                     <?php the_content(); ?>
                                 </div>
@@ -29,6 +29,9 @@ get_header();
 
                         </article>
                     </div>
+                </div>
+                <div class="col-lg-3">
+                    test
                 </div>
             </div>
         </div>

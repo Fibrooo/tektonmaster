@@ -15,7 +15,7 @@
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <!-- Цикл WordPress -->
                         <div class="blog_item">
-                            <?php echo the_post_thumbnail('blog_img') ?>
+                            <a href="<?php echo get_the_permalink(get_the_ID()) ?>"> <?php echo the_post_thumbnail('blog_img') ?> </a>
                             <div class="blog_item_content">
                                 <h2><?php the_title() ?></h2>
                                 <div class="descr"><?php echo get_the_excerpt() ?></div>
@@ -27,6 +27,15 @@
                         <p>Записей нет.</p>
                     <?php endif; ?>
                 </div>
+
+                <div class="pagination">
+                    <?php
+
+                    the_posts_pagination()
+
+                    ?>
+                </div>
+
             </div>
         </div>
     </div>

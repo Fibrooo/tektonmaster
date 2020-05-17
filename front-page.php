@@ -7,32 +7,26 @@ get_header();
 ?>
 
     <div class="main">
-        <div class="container-fluid">
-            <div class="row no-margin">
-                <div class="col-lg-12 no-margin">
-                    <img class="main__image" src="<?php echo $slide_image['url'] ?>" alt="">
-                    <div class="top__slide">
-                        <div class="main__descr"> <?php echo get_field('ключевая_фраза') ?></div>
-                    </div>
-                    <div class="slide__advantages">
-                        <?php
-
-                        $advantages = get_field('наши_преимущества');
-
-                        foreach ($advantages as $key => $value) :
-
-                            $data = $value;
-
-                            ?>
-                            <div class="advantages__box">
-                                <img src="<?php echo $data['изображение_преимущества']['url'] ?>" alt="<?php echo $data['текст_преимущества'] ?>">
-                                <h4><?php echo $data['текст_преимущества'] ?></h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main_container">
+                        <div class="main_phrase_wrapper">
+                            <div class="main_phrase">
+                                <h1> <?php echo get_field('ключевая_фраза') ?></h1>
+                                <h4>* Акция действует до 1 июля 2020г.</h4>
                             </div>
 
-
-                        <?php endforeach; ?>
-
+                            <div class="main_contact">
+                                <?php echo do_shortcode('[contact-form-7 id="90" title="Контактная форма 1"]'); ?>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
