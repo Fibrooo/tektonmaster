@@ -2,7 +2,10 @@
 
 get_header();
 ?>
-<?php $slide_image = get_field('изображение_главной');
+<?php 
+
+    $slide_image = get_field('изображение_главной');
+    $advantages = get_field('наши_преимущества')
 
 ?>
 
@@ -13,12 +16,21 @@ get_header();
                     <div class="main_container">
                         <div class="main_phrase_wrapper">
                             <div class="main_phrase">
-                                <h1> <?php echo get_field('ключевая_фраза') ?></h1>
-                                <h4>* Акция действует до 1 июля 2020г.</h4>
+                                <?php echo get_field('ключевая_фраза') ?>
+                                <div class="slide_advantages_wrapper">
+                                    <?php foreach ($advantages as $item): ?>
+                                    <div class="advantages__box">
+                                        <img src="<?php echo $item['изображение_преимущества']['url']?>" alt="">
+                                        <h4><?php echo $item['текст_преимущества']?></h4>
+                                    </div>
+                                    <?php endforeach;?>
+                                </div>
+
+                            
                             </div>
 
                             <div class="main_contact">
-                                <?php echo do_shortcode('[contact-form-7 id="90" title="Контактная форма 1"]'); ?>
+                                <?php echo do_shortcode('[contact-form-7 id="877" title="Основная форма (первая страница)"]'); ?>
                             </div>
                         </div>
                     </div>
