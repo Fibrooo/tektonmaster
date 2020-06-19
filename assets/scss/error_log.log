@@ -16,3 +16,4 @@
 01/24/20 6:46:13: main.scss - unexpected }: failed at `` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1066
 01/24/20 7:20:08: main.scss - parse error: failed at `margin-top: 30px` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1093
 01/28/20 1:49:00: main.scss - parse error: failed at `&: after {` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 1454
+06/18/20 10:42:01: main.scss - parse error: failed at `position: ` /Applications/MAMP/htdocs/tektonmaster.ls/wp-content/themes/tektonmaster/assets/scss/main.scss on line 277
